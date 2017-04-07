@@ -20,15 +20,15 @@ set of classes implementing MVC pattern, includes
 
 #### Testing
 
-1. copy from /vendor/mikewazovzky/simple/Mikewazovzky to project root  
-/News
-.htaccess
-composer.json
+- copy from /vendor/mikewazovzky/simple/Mikewazovzky to project root  
+/News  
+.htaccess  
+composer.json  
 index.php
 
-2. update autoload 
-'''composer dump-autoload```
+- update autoload 
+```composer dump-autoload```
 
-3. start application
+- start application
 
 
