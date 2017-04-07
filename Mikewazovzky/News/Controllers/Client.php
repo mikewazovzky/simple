@@ -1,8 +1,10 @@
 <?php
-namespace Mikewazovzky\News\Controllers;
+namespace News\Controllers;
 
-use Mikewazovzky\News\Models\Article;
+use Mikewazovzky\Simple\Controllers\Controller;
+use News\Models\Article;
 use Mikewazovzky\Simple\Exceptions\NodataException;
+
 
 class Client extends Controller 
 {

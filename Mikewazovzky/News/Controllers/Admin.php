@@ -1,8 +1,9 @@
 <?php
-namespace Mikewazovzky\News\Controllers;
+namespace News\Controllers;
 
-use Mikewazovzky\News\Models\Article;
-use Mikewazovzky\News\Models\Author;
+use News\Models\Article;
+use News\Models\Author;
+use Mikewazovzky\Simple\Controllers\Controller;
 use Mikewazovzky\Simple\Exceptions\NodataException;
 use Mikewazovzky\Simple\Exceptions\MultiException;
 

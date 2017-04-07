@@ -1,5 +1,7 @@
 <?php
-namespace Mikewazovzky\News\Models;
+namespace News\Models;
+
+use Mikewazovzky\Simple\Models\Model;
 
 class Author extends Model
 {
