@@ -25,9 +25,9 @@ set of classes implementing MVC pattern, includes
 .htaccess  
 composer.json  
 index.php
-- update autoload 
+- update autoload  
 ```composer dump-autoload```
-- rename 'environment.example' ещ
+- rename 'environment.example' file to 'environment.php'
 - start application
 
 
