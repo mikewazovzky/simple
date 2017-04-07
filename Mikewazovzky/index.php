@@ -24,11 +24,12 @@ use Mikewazovzky\Simple\Exceptions\NotFoundException;
 $ctrl = $_GET['controller'] ?: 'Client';
 $action = $_GET['action'] ?: 'Index';
 $errorHandler = new ErrorHandler();
-$logger = new Logger(__DIR__ . '/errorlog.txt');
-$mailer = new Mailer;
 $admin = 'mike.wazovzky@gmail.com';
 // DEBUG: // echo "controller = $ctrl, action = $action";
-try {	
+try {
+	$logger = new Logger(__DIR__ . '/errorlog.txt');
+	$mailer = new Mailer;
+	
 	switch ($ctrl) {
 	case 'Client':
 		$controller = new Client;

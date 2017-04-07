@@ -10,9 +10,9 @@ set of classes implementing MVC pattern, includes
 - Exceptions
 - set of service classes and tools  
 
-#### Version: dev-master (находится в процессе разработки)
+#### Version: 1.35
 
-#### Documentation: см. описание в коде
+#### Documentation: see PHPDoc within a code
 
 #### Installation
 
@@ -25,10 +25,9 @@ set of classes implementing MVC pattern, includes
 .htaccess  
 composer.json  
 index.php
-
 - update autoload 
 ```composer dump-autoload```
-
+- rename 'environment.example' ещ
 - start application
 
 

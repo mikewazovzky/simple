@@ -4,9 +4,9 @@ return [
 	// Database settings
 	'db' => [
 		'host' => 'localhost',
-		'database' => 'news', 
-		'user' => 'root', 
-		'password' => ''
+		'database' => 'database', 
+		'user' => 'user', 
+		'password' => 'password'
 	],
 	
 	// User Email Acccount settings
@@ -16,9 +16,9 @@ return [
 		// 'encryption' => 'ssl',		
 		'port' => 587,
 		'encryption' => 'tls',
-		'login' => 'mike.wazovzky',
-		'password' => 'BigDogsBite',		
-		'address' => 'mike.wazovzky@yandex.ru',
-		'name' => 'Mike Wazovzky'
+		'login' => 'userlogin',
+		'password' => 'userpassword',		
+		'address' => 'useraddress',
+		'name' => 'username'
 	]	
 ];
