@@ -28,7 +28,9 @@ environment.example
 index.php
 - update autoload  
 ```composer dump-autoload```
+- setup test database (table authors: id, name; table news: id, title, body)
 - rename 'environment.example' file to 'environment.php'
+- configure database and mail in 'environment.php'
 - start application
 
 
