@@ -1,0 +1,10 @@
+{
+    "require": {
+        "mikewazovzky/simple": "^1.31"
+    },
+	"autoload": {
+		"psr-4": {
+			"News\\" : "News/" 
+		}
+	}
+}

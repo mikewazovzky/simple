@@ -1,1 +1,0 @@
-http://servername/mikewazovzky/news/

@@ -1,7 +1,0 @@
-critical#Db::__constuct: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)#06-04-2017 22:01:36
-critical#Db::__constuct: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)#06-04-2017 22:03:06
-critical#Db::__constuct: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)#06-04-2017 22:04:37
-warning#NodataException: can not find article with id = 27#06-04-2017 22:13:47
-warning#NodataException: can not find article with id = 27#06-04-2017 22:14:13
-warning#NodataException: can not find article with id = 27#06-04-2017 22:15:06
-warning#NodataException: can not find article with id = 27#06-04-2017 22:15:31
