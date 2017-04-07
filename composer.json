@@ -21,6 +21,6 @@
     "autoload": {
         "psr-4": {
             "Mikewazovzky\\Simple\\": "Mikewazovzky/Simple/"
-        }
+        }     
     }
 }

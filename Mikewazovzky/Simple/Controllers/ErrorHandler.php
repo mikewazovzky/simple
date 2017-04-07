@@ -15,6 +15,6 @@ class ErrorHandler extends Controller
 		$this->view->file = $e->getFile();
 		$this->view->line = $e->getLine();
 		$this->view->trace = $e->getTraceAsString();
-		$this->view->display(__DIR__ . '/../../news/templates/error.php');
+		$this->view->display(__DIR__ . '/../templates/error.php');
 	}
 }

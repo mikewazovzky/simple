@@ -1,5 +1,6 @@
 <?php
-namespace Mikewazovzky\Simple\Models;
+namespace Mikewazovzky\News\Models;
+
 use Mikewazovzky\Simple\Exceptions\MultiException;
 
 class Article extends Model
