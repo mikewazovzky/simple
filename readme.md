@@ -10,7 +10,7 @@ set of classes implementing MVC pattern, includes
 - Exceptions
 - set of service classes and tools  
 
-#### Version: 1.37
+#### Version: 1.38
 
 #### Documentation: see PHPDoc within a code
 
