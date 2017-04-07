@@ -1,5 +1,6 @@
 <?php
 namespace Mikewazovzky\Simple\Models;
+
 use Mikewazovzky\Simple\Db;
 
 abstract class Model
@@ -20,6 +21,21 @@ abstract class Model
 		$sql = 'SELECT * FROM ' . static::TABLE . ' LIMIT ' . $limit;
 		$results = $db->query(static::class, $sql);
 		return $results;
+	}
+	/**
+	 * Generator. Yield  Model records from a database
+	 * 
+	 * @param integer $limit - limits the number of records to return
+	 * @return array of Model (static::class) objects  
+	 */
+	public static function getEach()
+	{
+		$db = Db::instance();
+		$sql = 'SELECT * FROM ' . static::TABLE;
+		$generator = $db->queryEach(static::class, $sql); 
+		foreach($generator as $item) {
+			yield $item;
+		}
 	}
 	/**
 	 * Find database record with specified id

@@ -1,6 +1,6 @@
 {
     "require": {
-        "mikewazovzky/simple": ">=1.38"
+        "mikewazovzky/simple": ">=1.39"
     },
 	"autoload": {
 		"psr-4": {

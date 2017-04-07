@@ -1,5 +1,6 @@
 <?php
 namespace Mikewazovzky\Simple;
+
 use PDO;
 use Mikewazovzky\Simple\Models\Article;
 use Mikewazovzky\Simple\Exceptions\DatabaseException;
@@ -58,6 +59,25 @@ class Db
 				return $sth->fetchAll(PDO::FETCH_CLASS, $class); 
 			}
 			return [];
+		} catch (\PDOException $e ) {
+			throw new DatabaseException('Db::query: ' . $e->getMessage() );			
+		}			
+	}
+	/**
+	 * Databse query Generator
+	 * @param string $sql - sql query request
+	 * @param array $data - sql request binding values 
+	 * @return array|bool - query results as array in case of success, false if request fails 
+	 */
+	public function queryEach(string $class, string $sql, $data = [])
+	{
+		try {
+			$sth = $this->dbh->prepare($sql);
+			$sth->execute($data); 
+			$sth->setFetchMode(PDO::FETCH_CLASS, $class);
+;			while ($result = $sth->fetch()) {
+				yield $result;
+			} 		
 		} catch (\PDOException $e ) {
 			throw new DatabaseException('Db::query: ' . $e->getMessage() );			
 		}			
