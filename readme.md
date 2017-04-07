@@ -10,7 +10,7 @@ set of classes implementing MVC pattern, includes
 - Exceptions
 - set of service classes and tools  
 
-#### Version: 1.35
+#### Version: 1.37
 
 #### Documentation: see PHPDoc within a code
 
@@ -23,7 +23,8 @@ set of classes implementing MVC pattern, includes
 - copy from /vendor/mikewazovzky/simple/Mikewazovzky to project root  
 /News  
 .htaccess  
-composer.json  
+composer.json
+environment.example  
 index.php
 - update autoload  
 ```composer dump-autoload```
