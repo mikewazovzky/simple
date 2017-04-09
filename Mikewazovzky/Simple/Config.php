@@ -1,7 +1,7 @@
 <?php
 namespace Mikewazovzky\Simple;
 
-use Mikewazovzky\Simple\Exceptions\NodataException;
+use Mikewazovzky\Simple\NodataException;
 
 class Config
 {
