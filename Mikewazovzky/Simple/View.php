@@ -16,8 +16,7 @@ namespace Mikewazovzky\Simple;
  */
 class View implements \Countable, \ArrayAccess, \Iterator 
 {
-	use Magic;
-	use Collection;
+	use TCollection;
 	/**
 	 * Renders view to a string
  	 * @param string $template path to template file

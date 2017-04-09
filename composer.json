@@ -11,7 +11,9 @@
 	
 	"require": {
         "psr/log": "^1.0",
-        "swiftmailer/swiftmailer": "^5.4"
+        "swiftmailer/swiftmailer": "^5.4",
+		"mikewazovzky/simple-collection": ">=1.04",
+		"mikewazovzky/simple-exceptions": ">=1.04",
     },
     
 	"require-dev": {

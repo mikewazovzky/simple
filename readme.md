@@ -10,7 +10,7 @@ set of classes implementing MVC pattern, includes
 - Exceptions
 - set of service classes and tools  
 
-#### Version: 1.38
+#### Version: 1.41 (Collection and Exceptions packages are separeted from core library)
 
 #### Documentation: see PHPDoc within a code
 
