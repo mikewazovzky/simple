@@ -3,7 +3,7 @@ namespace Mikewazovzky\Simple;
 
 use PDO;
 use Mikewazovzky\Simple\Models\Article;
-use Mikewazovzky\Simple\Exceptions\DatabaseException;
+use Mikewazovzky\Simple\DatabaseException;
 
 class Db
 {

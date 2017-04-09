@@ -4,8 +4,8 @@ namespace News\Controllers;
 use News\Models\Article;
 use News\Models\Author;
 use Mikewazovzky\Simple\Controllers\Controller;
-use Mikewazovzky\Simple\Exceptions\NodataException;
-use Mikewazovzky\Simple\Exceptions\MultiException;
+use Mikewazovzky\Simple\NodataException;
+use Mikewazovzky\Simple\MultiException;
 
 class Admin extends Client 
 {

@@ -2,7 +2,7 @@
 namespace News\Models;
 
 use Mikewazovzky\Simple\Models\Model;
-use Mikewazovzky\Simple\Exceptions\MultiException;
+use Mikewazovzky\Simple\MultiException;
 
 class Article extends Model
 {

@@ -3,7 +3,7 @@ namespace News\Controllers;
 
 use Mikewazovzky\Simple\Controllers\Controller;
 use News\Models\Article;
-use Mikewazovzky\Simple\Exceptions\NodataException;
+use Mikewazovzky\Simple\NodataException;
 
 
 class Client extends Controller 

@@ -12,10 +12,10 @@ use News\Controllers\Admin;
 use Mikewazovzky\Simple\Controllers\ErrorHandler;
 use Mikewazovzky\Simple\Logger;
 use Mikewazovzky\Simple\Mailer;
-use Mikewazovzky\Simple\Exceptions\BasicException;
-use Mikewazovzky\Simple\Exceptions\DatabaseException;
-use Mikewazovzky\Simple\Exceptions\NodataException;
-use Mikewazovzky\Simple\Exceptions\NotFoundException;
+use Mikewazovzky\Simple\BasicException;
+use Mikewazovzky\Simple\DatabaseException;
+use Mikewazovzky\Simple\NodataException;
+use Mikewazovzky\Simple\NotFoundException;
 
 // use Mikewazovzky\Simple\Tools\UriParser;
 // DEBUG: // $requestedUrl = $_SERVER['REQUEST_URI'];
