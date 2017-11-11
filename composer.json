@@ -1,28 +1,31 @@
 {
     "name": "mikewazovzky/simple",
-    "description": "simple test library",
+    "description": "Simple test library",
     "homepage": "https://github.com/mikewazovzky/simple.git",
     "license": "MIT",
     "authors": [
         {
             "name": "mikewazovzky"
         }
-	],	
-	
-	"require": {
-        "psr/log": "^1.0",
-        "swiftmailer/swiftmailer": "^5.4",
-		"mikewazovzky/simple-collection": ">=1.04",
-		"mikewazovzky/simple-exceptions": ">=1.04"
-    },
-    
-	"require-dev": {
-        "phpunit/phpunit": "^6.0"
-    },
-
+    ],
     "autoload": {
         "psr-4": {
-            "Mikewazovzky\\Simple\\": "Mikewazovzky/Simple/"
-        }     
+            "Mikewazovzky\\Simple\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "psr/log": "^1.0",
+        "swiftmailer/swiftmailer": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
     }
 }

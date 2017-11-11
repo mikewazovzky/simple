@@ -1,2 +1,5 @@
-/vendor
-environment.php
+notes/
+production/
+storage/
+vendor/
+.env
