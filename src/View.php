@@ -20,7 +20,7 @@ class View
             $$prop = $value;
         }
 
-        $path = $templatePath ?: '/../../../templates';
+        $path = $templatePath ?: '/../../../../templates';
 
         ob_start();
         include __DIR__ . $path . '/' .$template;

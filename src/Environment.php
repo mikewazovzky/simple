@@ -18,7 +18,7 @@ class Environment
      *
      * @var string
      */
-    protected $filename = __DIR__ . '/../../../.env';
+    protected $filename = __DIR__ . '/../../../../.env';
 
     /**
      * Create Environment  instance  singleton and

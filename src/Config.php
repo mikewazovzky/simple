@@ -18,7 +18,7 @@ class Config
      *
      * @var string $pathname
      */
-    public $pathname = __DIR__ . '/../../../config/';
+    public $pathname = __DIR__ . '/../../../../config/';
 
     /**
      * Create Environment  instance  singleton and
