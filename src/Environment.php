@@ -11,7 +11,7 @@ class Environment
      *
      * @var array
      */
-    public $data = [];
+    protected $data = [];
 
     /**
      * Default env parameters file located at the project root.
@@ -21,17 +21,22 @@ class Environment
     protected $filename = __DIR__ . '/../../../../.env';
 
     /**
-     * Create Environment  instance  singleton and
-     * read configuration parameters from the file
+     * Create Environment  instance
      *
      * @param type name
      * @return type
      */
     protected function __construct()
     {
-        $this->loadData($this->filename);
+        $this->loadData();
     }
 
+    /**
+     * Load env data from the file
+     *
+     * @param string|null $file
+     * @return boolean - true if success
+     */
     public function loadData($file = null)
     {
         $filename = $file ?: $this->filename;

@@ -19,7 +19,7 @@ class Db
      */
     protected function __construct()
     {
-        $config = Config::instance()->data['db'];
+        $config = Config::instance()->get('db');
 
         try {
             $this->dbh = new \PDO(
@@ -34,6 +34,7 @@ class Db
 
     /**
      * Perform databse query (no results expected)
+     *
      * @param string $sql - sql query request
      * @param array $data - sql request binding values
      * @return bool - true if query performed successfully
@@ -66,6 +67,27 @@ class Db
             throw new DatabaseException('Db::query: ' . $e->getMessage() );
         }
     }
+
+    /**
+     * Perform raw databse query
+     * @param string $sql - sql query request
+     * @param array $data - sql request binding values
+     * @return array|bool - query results as array in case of success, false if request fails
+     */
+    public function queryRaw(string $sql, $data = [])
+    {
+        try {
+            $sth = $this->dbh->prepare($sql);
+            $result = $sth->execute($data);
+            if ($result !== false) {
+                return $sth->fetchAll();
+            }
+            return [];
+        } catch (\PDOException $e ) {
+            throw new DatabaseException('Db::query: ' . $e->getMessage() );
+        }
+    }
+
     /**
      * Databse query Generator
      * @param string $sql - sql query request
@@ -101,18 +123,5 @@ class Db
     public function errorInfo()
     {
         return $this->dbh->errorInfo();
-    }
-
-    public function queryRaw($sql)
-    {
-        try {
-            $stmt = $this->dbh->query($sql);
-            if (!$stmt) {
-                var_dump($this->errorInfo());
-            }
-            return $stmt->fetchAll();
-        } catch (\PDOException $e ) {
-            throw new DatabaseException('Db::query: ' . $e->getMessage() );
-        }
     }
 }

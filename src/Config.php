@@ -11,30 +11,22 @@ class Config
      *
      * @var array
      */
-    public $data = [];
+    protected $data = [];
 
     /**
      * Default path to project config folder /config
      *
      * @var string $pathname
      */
-    public $pathname = __DIR__ . '/../../../../config/';
+    protected $pathname = __DIR__ . '/../../../../config/';
 
     /**
-     * Create Environment  instance  singleton and
-     * read configuration parameters from the file
-     *
-     * @param type name
-     * @return type
+     * Create Config instance
      */
-    protected function __construct($path = null)
+    protected function __construct()
     {
-        if ($path) {
-            $this->pathname = $path;
-        }
-
         foreach ($this->list() as $file) {
-            $this->set(basename($file, '.php'), $file);
+            $this->loadData(basename($file, '.php'), $file);
         }
     }
 
@@ -45,11 +37,12 @@ class Config
      * @param string|null $file
      * @return type
      */
-    public function set($key, $file = null)
+    public function loadData($key, $file = null, $path = null)
     {
+        $pathname = $path ?: $this->pathname;
         $file = $file ?: "{$key}.php";
 
-        $this->data[$key] = include $this->pathname . $file;
+        $this->data[$key] = include $pathname . '/' . $file;
     }
 
     /**
@@ -58,9 +51,9 @@ class Config
      * @param type name
      * @return type
      */
-    public function get($key, $element)
+    public function get($key, $element = null)
     {
-        return $this->data[$key][$element];
+        return $element ? $this->data[$key][$element] : $this->data[$key];
     }
 
     /**
@@ -71,6 +64,10 @@ class Config
     protected function list()
     {
         $path = $this->pathname;
+
+        if (!file_exists($path)) {
+            return [];
+        }
 
         $files = scandir($path);
         $files = array_filter($files, function ($file) use ($path) {

@@ -5,13 +5,6 @@ use Mikewazovzky\Simple\Environment;
 
 class EnvironmentTest extends TestCase
 {
-    public $config;
-
-    protected function setUp()
-    {
-        //
-    }
-
     /** @test */
     function it_can_load_env_data_from_file()
     {

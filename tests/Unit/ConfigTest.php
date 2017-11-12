@@ -15,6 +15,7 @@ class ConfigTest extends TestCase
     /** @test */
     function it_reads_config_data()
     {
+        $this->config->loadData('db', null, __DIR__ . '/../../config');
         $this->assertEquals('root', $this->config->get('db', 'user'));
     }
 }
