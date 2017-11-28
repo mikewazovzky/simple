@@ -1,3 +1,7 @@
+example/vendor/
+example/.env
+example/composer.lock
+example/errorlog.txt
 notes/
 production/
 storage/
