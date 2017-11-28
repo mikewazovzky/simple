@@ -1,6 +1,6 @@
 <?php
 
-namespace Mikewazovzky\Simple\Exceptions;
+namespace MWazovzky\Simple\Exceptions;
 
 class DatabaseException extends \Exception
 {

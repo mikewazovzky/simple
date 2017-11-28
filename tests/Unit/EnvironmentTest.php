@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Mikewazovzky\Simple\Environment;
+use MWazovzky\Simple\Environment;
 
 class EnvironmentTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mikewazovzky\Simple\Controllers;
+namespace MWazovzky\Simple\Controllers;
 
 use Exception;
 

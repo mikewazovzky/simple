@@ -1,16 +1,16 @@
 {
-    "name": "mikewazovzky/simple",
+    "name": "mwazovzky/simple",
     "description": "Simple test library",
-    "homepage": "https://github.com/mikewazovzky/simple.git",
+    "homepage": "https://github.com/mwazovzky/simple.git",
     "license": "MIT",
     "authors": [
         {
-            "name": "mikewazovzky"
+            "name": "mwazovzky"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Mikewazovzky\\Simple\\": "src/"
+            "MWazovzky\\Simple\\": "src/"
         },
         "files": [
             "src/functions.php"

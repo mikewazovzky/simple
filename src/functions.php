@@ -1,8 +1,8 @@
 <?php
 
-use Mikewazovzky\Simple\View;
-use Mikewazovzky\Simple\Config;
-use Mikewazovzky\Simple\Environment;
+use MWazovzky\Simple\View;
+use MWazovzky\Simple\Config;
+use MWazovzky\Simple\Environment;
 
 /**
  * Redirect to specified url.

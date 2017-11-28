@@ -1,6 +1,6 @@
 <?php
 
-use Mikewazovzky\Simple\Config;
+use MWazovzky\Simple\Config;
 use PHPUnit\Framework\TestCase;
 
 class ConfigTest extends TestCase

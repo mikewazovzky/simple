@@ -1,9 +1,9 @@
 <?php
 
-namespace Mikewazovzky\Simple\Exceptions;
+namespace MWazovzky\Simple\Exceptions;
 
-use Mikewazovzky\Simple\Collection;
-use Mikewazovzky\Simple\BasicException;
+use MWazovzky\Simple\Collection;
+use MWazovzky\Simple\BasicException;
 
 class MultiException implements \ArrayAccess, \Iterator, \Countable
 {

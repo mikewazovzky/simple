@@ -1,8 +1,8 @@
 <?php
 
-namespace Mikewazovzky\Simple\Models;
+namespace MWazovzky\Simple\Models;
 
-use Mikewazovzky\Simple\Db;
+use MWazovzky\Simple\Db;
 
 abstract class Model
 {

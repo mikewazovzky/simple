@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Mikewazovzky\Simple\Dummy;
+use MWazovzky\Simple\Dummy;
 
 class CollectionTest extends TestCase
 {

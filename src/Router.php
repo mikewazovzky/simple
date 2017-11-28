@@ -1,8 +1,8 @@
 <?php
 
-namespace Mikewazovzky\Simple;
+namespace MWazovzky\Simple;
 
-use Mikewazovzky\Simple\Request;
+use MWazovzky\Simple\Request;
 
 class Router
 {

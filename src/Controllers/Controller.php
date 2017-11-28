@@ -1,8 +1,8 @@
 <?php
 
-namespace Mikewazovzky\Simple\Controllers;
+namespace MWazovzky\Simple\Controllers;
 
-use Mikewazovzky\Simple\View;
+use MWazovzky\Simple\View;
 
 class Controller
 {

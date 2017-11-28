@@ -1,6 +1,6 @@
 <?php
 
-namespace Mikewazovzky\Simple;
+namespace MWazovzky\Simple;
 
 class Request
 {
